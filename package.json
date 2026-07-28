@@ -1,0 +1,11 @@
+{
+  "name": "rabbita-midpull-drain-mre",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "verify": "moon build --target js --release && node verify.mjs"
+  },
+  "devDependencies": {
+    "@happy-dom/global-registrator": "^18.0.1"
+  }
+}

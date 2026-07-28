@@ -1,0 +1,18 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "tonyfettes/rabbita-midpull-drain-mre/main"
+
+// Values
+
+// Errors
+
+// Types and methods
+type DialogMsg
+
+type PageMsg
+
+type ThemeMsg
+
+// Type aliases
+
+// Traits
+
