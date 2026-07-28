@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>rabbita mid-pull drain MRE</title>
+    <style>
+      body {
+        font-family: monospace;
+        max-width: 720px;
+        margin: 24px auto;
+        padding: 0 16px;
+        line-height: 1.5;
+      }
+      #log {
+        white-space: pre-wrap;
+        background: #1e1e1e;
+        color: #9cdcfe;
+        padding: 12px;
+        min-height: 3em;
+        margin-top: 16px;
+      }
+      .steps {
+        background: #fff8e1;
+        border: 1px solid #e0c060;
+        padding: 12px 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>rabbita: missed re-render after a switch_by branch init emit</h1>
+    <div class="steps">
+      Click the buttons in order <b>1 → 2 → 3</b>.<br />
+      After <b>2</b> the store log below proves the model changed, but no
+      dialog appears (the bug). After <b>3</b> — an unrelated store write —
+      the dialog suddenly shows up.<br />
+      Reload and click <b>2</b> directly: it works fine without step 1.
+    </div>
+    <div id="app"></div>
+    <div id="log">store log:
+</div>
+    <script>
+      const logElement = document.getElementById("log");
+      const original = console.log.bind(console);
+      console.log = (...args) => {
+        original(...args);
+        logElement.textContent += args.join(" ") + "\n";
+      };
+    </script>
+    <script type="module" src="./main.js"></script>
+  </body>
+</html>

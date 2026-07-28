@@ -3,6 +3,10 @@
 Affects `moonbit-community/rabbita` 0.13.0 – 0.13.2 (the relevant runtime code
 is unchanged across those releases).
 
+**Live demo:** <https://tonyfettes.github.io/rabbita-midpull-drain-mre/> —
+click the buttons in order 1 → 2 → 3. The on-page store log shows the model
+changing while the view stays stale.
+
 ## Symptom
 
 A store accepts a message and updates its model, but the view does not
