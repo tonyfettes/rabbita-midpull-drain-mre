@@ -11,47 +11,51 @@ await import("./_build/js/release/build/main/main.js");
 const frame = () =>
   new Promise((resolve) => requestAnimationFrame(() => setTimeout(resolve, 0)));
 
-const click = (prefix) => {
-  const button = [...document.querySelectorAll("button")].find((b) =>
-    b.textContent.trim().startsWith(prefix),
+const click = (label) => {
+  const button = [...document.querySelectorAll("button")].find(
+    (b) => b.textContent.trim() === label,
   );
-  if (!button) throw new Error(`button ${prefix} not found`);
+  if (!button) throw new Error(`button "${label}" not found`);
   button.click();
 };
 
-const dialogVisible = () => document.body.textContent.includes("DIALOG IS OPEN");
+const shownCount = () => {
+  const match = document.body.textContent.match(/count: (\d+)/);
+  if (!match) throw new Error("count not found in DOM");
+  return Number(match[1]);
+};
 
 let failures = 0;
-const check = (label, actual, expected) => {
+const check = (label, expected) => {
+  const actual = shownCount();
   const ok = actual === expected;
   if (!ok) failures += 1;
-  console.log(`${ok ? "ok " : "FAIL"} ${label}: dialog visible = ${actual} (expected ${expected})`);
+  console.log(`${ok ? "ok " : "FAIL"} ${label}: view shows count ${actual} (expected ${expected})`);
 };
 
 await frame(); // initial paint
 
-const skipNavigate = process.env.SKIP_NAVIGATE === "1";
-if (!skipNavigate) {
-  click("1."); // navigate: switch_by creates a branch whose init emits into the dialog store
-  await frame();
-} else {
-  console.log("control run: skipping the navigate click");
-}
+click("+1");
+await frame();
+check("before any tab switch, +1 renders", 1);
 
-click("2."); // open dialog: message lands in the store damaged by step 1
+click("switch tab"); // switch_by creates a branch whose init pings the counter store
+await frame();
+
+click("+1"); // model goes to 2, but the view is frozen
 await frame();
 await frame();
-check("after 'open dialog' click", dialogVisible(), true);
-const missedRender = !dialogVisible();
+check("after a tab switch, +1 renders", 2);
+const frozen = shownCount() !== 2;
 
-click("3."); // unrelated store write repairs the graph spine
+click("switch tab"); // unrelated store write repairs the graph spine
 await frame();
-check("after 'cycle theme' click", dialogVisible(), true);
+check("after switching tabs again, view catches up", 2);
 
-if (missedRender && dialogVisible()) {
+if (frozen && shownCount() === 2) {
   console.log(
-    "\nBUG REPRODUCED: the dialog store accepted OpenDialog (see console line" +
-      " above) but the view did not re-render until an unrelated store was" +
+    "\nBUG REPRODUCED: the counter store accepted the increment (see store" +
+      " log above) but the view stayed frozen until an unrelated store was" +
       " written.",
   );
 }

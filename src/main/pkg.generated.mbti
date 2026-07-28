@@ -6,11 +6,9 @@ package "tonyfettes/rabbita-midpull-drain-mre/main"
 // Errors
 
 // Types and methods
-type DialogMsg
+type CounterMsg
 
-type PageMsg
-
-type ThemeMsg
+type TabMsg
 
 // Type aliases
 

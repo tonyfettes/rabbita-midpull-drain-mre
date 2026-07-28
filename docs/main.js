@@ -245,13 +245,10 @@ function _M0TP319moonbit_2dcommunity7rabbita6common6Scroll(param0, param1, param
   this.scroll_width = param1;
   this.scroll_height = param2;
 }
-function _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(param0) {
+function _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(param0) {
   this.value = param0;
 }
-function _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(param0) {
-  this.value = param0;
-}
-function _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(param0) {
+function _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(param0) {
   this.value = param0;
 }
 function _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGuE(param0) {
@@ -662,11 +659,10 @@ const _M0FP419moonbit_2dcommunity7rabbita8internal6duplix11root__scope = _M0MP41
 const _M0FP419moonbit_2dcommunity7rabbita8internal6duplix14current__scope = _M0MPC13ref3Ref3RefGRP419moonbit_2dcommunity7rabbita8internal7slotmap2IdE(_M0FP419moonbit_2dcommunity7rabbita8internal6duplix11root__scope);
 const _M0FP419moonbit_2dcommunity7rabbita8internal6duplix4uuid = _M0MPC13ref3Ref3RefGiE(0);
 const _M0FP419moonbit_2dcommunity7rabbita8internal6duplix5clock = _M0MPC13ref3Ref3RefGdE(0);
+const _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS53 = "button";
+const _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS54 = "button";
 const _M0FP419moonbit_2dcommunity7rabbita8internal7runtime14global__stores = _M0MP419moonbit_2dcommunity7rabbita8internal7slotmap7SlotMap7SlotMapGRP419moonbit_2dcommunity7rabbita8internal7runtime5StoreE();
 const _M0FP219moonbit_2dcommunity7rabbita14ambient__graph = _M0MPC13ref3Ref3RefGORP219moonbit_2dcommunity7rabbita5GraphE(undefined);
-const _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS65 = "button";
-const _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS66 = "button";
-const _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS67 = "button";
 function _M0FPB13consume4__acc(acc, input) {
   const _p = (acc >>> 0) + ((Math.imul(input, -1028477379) | 0) >>> 0) | 0;
   const _p$2 = 17;
@@ -681,6 +677,9 @@ function _M0MPB6Hasher13combine__uint(self, value) {
 }
 function _M0MPB13StringBuilder13write__objectGiE(self, obj) {
   _M0IP016_24default__implPB4Show6outputGiE(obj, { self: self, method_table: _M0FP092moonbitlang_2fcore_2fbuiltin_2fStringBuilder_24as_24_40moonbitlang_2fcore_2fbuiltin_2eLogger });
+}
+function _M0MPB13StringBuilder13write__objectGsE(self, obj) {
+  _M0IP016_24default__implPB4Show6outputGsE(obj, { self: self, method_table: _M0FP092moonbitlang_2fcore_2fbuiltin_2fStringBuilder_24as_24_40moonbitlang_2fcore_2fbuiltin_2eLogger });
 }
 function _M0MPB13StringBuilder21StringBuilder_2einner(size_hint) {
   return new _M0TPB13StringBuilder("");
@@ -785,6 +784,9 @@ function _M0IP016_24default__implPB6Logger16write__substringGRPB13StringBuilderE
 function _M0IP016_24default__implPB4Show6outputGiE(self, logger) {
   logger.method_table.method_0(logger.self, _M0IPC13int3IntPB4Show10to__string(self));
 }
+function _M0IP016_24default__implPB4Show6outputGsE(self, logger) {
+  logger.method_table.method_0(logger.self, self);
+}
 function _M0MPB4Iter4nextGUsWRP319moonbit_2dcommunity7rabbita3dom5EventRP319moonbit_2dcommunity7rabbita3cmd9SchedulerEuEE(self) {
   const _func = self.f;
   const result = _func();
@@ -821,7 +823,7 @@ function _M0MPC16string10StringView9to__owned(self) {
 function _M0IPB13StringBuilderPB6Logger11write__view(self, str) {
   self.val = `${self.val}${_M0MPC16string10StringView9to__owned(str)}`;
 }
-function _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(self, value) {
+function _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(self, value) {
   _M0MPB7JSArray4push(self, value);
 }
 function _M0MPC15array5Array4pushGjE(self, value) {
@@ -2979,14 +2981,11 @@ function _M0MP319moonbit_2dcommunity7rabbita6common8Keyboard3new(key, code, alt_
 function _M0MP319moonbit_2dcommunity7rabbita6common6Scroll3new(offset, width, height) {
   return new _M0TP319moonbit_2dcommunity7rabbita6common6Scroll(offset, width, height);
 }
-function _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(x) {
-  return new _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(x);
+function _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(x) {
+  return new _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(x);
 }
-function _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(x) {
-  return new _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(x);
-}
-function _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(x) {
-  return new _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(x);
+function _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(x) {
+  return new _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(x);
 }
 function _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGuE(x) {
   return new _M0TP419moonbit_2dcommunity7rabbita8internal3any7WrapperGuE(x);
@@ -3164,14 +3163,11 @@ function _M0IP016_24default__implP319moonbit_2dcommunity7rabbita3cmd9Scheduler3a
   _M0IP016_24default__implP319moonbit_2dcommunity7rabbita3cmd9Scheduler3addN2goS29GRP419moonbit_2dcommunity7rabbita8internal7runtime7SandboxE(self, cmd);
   _M0IP419moonbit_2dcommunity7rabbita8internal7runtime7SandboxP319moonbit_2dcommunity7rabbita3cmd9Scheduler14drain__message(self);
 }
-function _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(id) {
-  return (msg) => new _M0DTP319moonbit_2dcommunity7rabbita3cmd3Cmd7Message(id, _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(msg));
+function _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(id) {
+  return (msg) => new _M0DTP319moonbit_2dcommunity7rabbita3cmd3Cmd7Message(id, _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(msg));
 }
-function _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(id) {
-  return (msg) => new _M0DTP319moonbit_2dcommunity7rabbita3cmd3Cmd7Message(id, _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(msg));
-}
-function _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(id) {
-  return (msg) => new _M0DTP319moonbit_2dcommunity7rabbita3cmd3Cmd7Message(id, _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(msg));
+function _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(id) {
+  return (msg) => new _M0DTP319moonbit_2dcommunity7rabbita3cmd3Cmd7Message(id, _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(msg));
 }
 function _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGuE(id) {
   return (msg) => new _M0DTP319moonbit_2dcommunity7rabbita3cmd3Cmd7Message(id, _M0FP419moonbit_2dcommunity7rabbita8internal3any5eraseGuE(msg));
@@ -3365,8 +3361,8 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4map2GRP319moon
     return f(_tmp$2, undefined);
   });
 }
-function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4map3GibiRP319moonbit_2dcommunity7rabbita4html4HtmlE(a, b, c, f) {
-  return _M0FP419moonbit_2dcommunity7rabbita8internal6duplix9map__nodeGRP319moonbit_2dcommunity7rabbita4html4HtmlE([{ self: a, method_table: _M0FP0138moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bInt_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode }, { self: b, method_table: _M0FP0139moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bBool_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode }, { self: c, method_table: _M0FP0138moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bInt_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode }], () => {
+function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4map2GibRP319moonbit_2dcommunity7rabbita4html4HtmlE(a, b, f) {
+  return _M0FP419moonbit_2dcommunity7rabbita8internal6duplix9map__nodeGRP319moonbit_2dcommunity7rabbita4html4HtmlE([{ self: a, method_table: _M0FP0138moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bInt_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode }, { self: b, method_table: _M0FP0139moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bBool_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode }], () => {
     const _p = a.value;
     let _tmp;
     if (_p === undefined) {
@@ -3377,16 +3373,7 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4map3GibiRP319m
     }
     const _tmp$2 = _tmp;
     const _p$2 = b.value;
-    const _tmp$3 = _p$2 === -1 ? $panic() : _p$2;
-    const _p$3 = c.value;
-    let _tmp$4;
-    if (_p$3 === undefined) {
-      _tmp$4 = $panic();
-    } else {
-      const _p$4 = _p$3;
-      _tmp$4 = _p$4;
-    }
-    return f(_tmp$2, _tmp$3, _tmp$4);
+    return f(_tmp$2, _p$2 === -1 ? $panic() : _p$2);
   });
 }
 function _M0FP419moonbit_2dcommunity7rabbita8internal6duplix10get__scope() {
@@ -3409,7 +3396,7 @@ function _M0FP419moonbit_2dcommunity7rabbita8internal6duplix11with__scopeGRP419m
   return result;
 }
 function _M0FP419moonbit_2dcommunity7rabbita8internal6duplix11on__cleanup(f) {
-  _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(_M0FP419moonbit_2dcommunity7rabbita8internal6duplix10get__scope().cleanups, f);
+  _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(_M0FP419moonbit_2dcommunity7rabbita8internal6duplix10get__scope().cleanups, f);
 }
 function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix5Scope7dispose(self) {
   const _it = _M0MPC13set3Set4iterGRP419moonbit_2dcommunity7rabbita8internal7slotmap2IdE(self.sub_scopes);
@@ -4257,11 +4244,11 @@ function _M0FP419moonbit_2dcommunity7rabbita8internal6duplix11pull__value(node) 
       if (_x$2.method_table.method_3(_x$2.self).dirty) {
         const id = _x$2.method_table.method_0(_x$2.self);
         if (_expanded) {
-          _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(recomputes, _x$2);
+          _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(recomputes, _x$2);
         } else {
           if (!_M0MPC13set3Set8containsGiE(seen, id)) {
             _M0MPC13set3Set3addGiE(seen, id);
-            _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(stack, { _0: _x$2, _1: true });
+            _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(stack, { _0: _x$2, _1: true });
             const _bind$3 = _x$2.method_table.method_1(_x$2.self);
             const _bind$4 = _bind$3.length;
             let _tmp = 0;
@@ -4270,7 +4257,7 @@ function _M0FP419moonbit_2dcommunity7rabbita8internal6duplix11pull__value(node) 
               if (_ < _bind$4) {
                 const child = _bind$3[_];
                 if (child.method_table.method_3(child.self).dirty) {
-                  _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(stack, { _0: child, _1: false });
+                  _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(stack, { _0: child, _1: false });
                 }
                 _tmp = _ + 1 | 0;
                 continue;
@@ -4326,7 +4313,7 @@ function _M0FP419moonbit_2dcommunity7rabbita8internal6duplix11pull__value(node) 
             _tmp$3 = _p$2;
           }
           if (_tmp$3) {
-            _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(child.method_table.method_3(child.self).parents, node$2.method_table.method_3(node$2.self));
+            _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(child.method_table.method_3(child.self).parents, node$2.method_table.method_3(node$2.self));
           }
           _tmp$2 = _$2 + 1 | 0;
           continue;
@@ -4374,7 +4361,7 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node14internal__rea
   _M0FP419moonbit_2dcommunity7rabbita8internal6duplix11pull__value({ self: a, method_table: _M0FP0142moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bUnit_3f_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode });
   return _M0MPC16option6Option6unwrapGOuE(a.value);
 }
-function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4bindGiuE(a, f) {
+function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4bindGbuE(a, f) {
   const b1_dirty_sub = new _M0TPB8MutLocalGORP419moonbit_2dcommunity7rabbita8internal6duplix9DirtyFlagE(undefined);
   const output_childs = [];
   const _bind = [];
@@ -4382,14 +4369,7 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4bindGiuE(a, f)
   const output_dirty_flag = new _M0TP419moonbit_2dcommunity7rabbita8internal6duplix9DirtyFlag(_bind$2, true, _bind);
   const compute = () => {
     const _p = a.value;
-    let _tmp;
-    if (_p === undefined) {
-      _tmp = $panic();
-    } else {
-      const _p$2 = _p;
-      _tmp = _p$2;
-    }
-    const b2 = f(_tmp);
+    const b2 = f(_p === -1 ? $panic() : _p);
     const _bind$3 = b1_dirty_sub.val;
     let branch_changed;
     if (_bind$3 === undefined) {
@@ -4420,16 +4400,16 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4bindGiuE(a, f)
           }
           const _p$2 = output_childs.length;
           let _bind$6;
-          let _tmp$2 = 0;
+          let _tmp = 0;
           while (true) {
-            const _p$3 = _tmp$2;
+            const _p$3 = _tmp;
             if (_p$3 < _p$2) {
               const _p$4 = output_childs[_p$3];
               if (_p$4.method_table.method_3(_p$4.self).id === _b1.id) {
                 _bind$6 = _p$3;
                 break;
               }
-              _tmp$2 = _p$3 + 1 | 0;
+              _tmp = _p$3 + 1 | 0;
               continue;
             } else {
               _bind$6 = undefined;
@@ -4445,22 +4425,22 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4bindGiuE(a, f)
         }
       }
       if (b2.dirty_flag.id !== a.dirty_flag.id) {
-        _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(b2.dirty_flag.parents, output_dirty_flag);
-        _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(output_childs, { self: b2, method_table: _M0FP0139moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bUnit_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode });
+        _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(b2.dirty_flag.parents, output_dirty_flag);
+        _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(output_childs, { self: b2, method_table: _M0FP0139moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bUnit_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode });
       }
       b1_dirty_sub.val = b2.dirty_flag;
     }
     _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node14internal__readGuE(b2);
   };
-  _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(output_childs, { self: a, method_table: _M0FP0138moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bInt_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode });
+  _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(output_childs, { self: a, method_table: _M0FP0139moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2fNode_5bBool_5d_24as_24_40moonbit_2dcommunity_2frabbita_2finternal_2fduplix_2eErasedNode });
   const _bind$3 = _M0FP419moonbit_2dcommunity7rabbita8internal6duplix9get__uuid();
   const _bind$4 = _M0FP419moonbit_2dcommunity7rabbita8internal6duplix14current__scope.val;
   const _bind$5 = -1;
   return new _M0TP419moonbit_2dcommunity7rabbita8internal6duplix4NodeGuE(_bind$3, _bind$5, compute, 0, 0, _bind$4, output_childs, output_dirty_flag);
 }
-function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node10switch__byGiuE(a, f, by) {
+function _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node10switch__byGbuE(a, f, by) {
   const active = new _M0TPB8MutLocalGOUsRP419moonbit_2dcommunity7rabbita8internal6duplix4NodeGuERP419moonbit_2dcommunity7rabbita8internal7slotmap2IdEE(undefined);
-  return _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4bindGiuE(a, (value) => {
+  return _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4bindGbuE(a, (value) => {
     const tag = by(value);
     let value$2;
     _L: {
@@ -5494,7 +5474,7 @@ function _M0FP419moonbit_2dcommunity7rabbita8internal7runtime14diff__children(ol
             const i = _tmp;
             if (i >= len1) {
               const inode = _M0MP419moonbit_2dcommunity7rabbita8internal7runtime5VNode6insert(_M0MPC15array5Array2atGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(_new, i), sandbox, parent, before);
-              _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(acc, inode);
+              _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(acc, inode);
               before = _M0FP419moonbit_2dcommunity7rabbita8internal7runtime8nullableGRP319moonbit_2dcommunity7rabbita3dom4NodeE(_M0MP419moonbit_2dcommunity7rabbita8internal7runtime5INode5start(inode));
               _tmp = i - 1 | 0;
               continue;
@@ -5509,7 +5489,7 @@ function _M0FP419moonbit_2dcommunity7rabbita8internal7runtime14diff__children(ol
           const i = _tmp;
           if (i >= 0) {
             const inode = _M0FP419moonbit_2dcommunity7rabbita8internal7runtime10diff__node(_M0MPC15array5Array2atGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(_old, i), _M0MPC15array5Array2atGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(_new, i), sandbox, parent, before);
-            _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(acc, inode);
+            _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(acc, inode);
             before = _M0FP419moonbit_2dcommunity7rabbita8internal7runtime8nullableGRP319moonbit_2dcommunity7rabbita3dom4NodeE(_M0MP419moonbit_2dcommunity7rabbita8internal7runtime5INode5start(inode));
             _tmp = i - 1 | 0;
             continue;
@@ -5565,7 +5545,7 @@ function _M0FP419moonbit_2dcommunity7rabbita8internal7runtime14diff__children(ol
               _M0MP419moonbit_2dcommunity7rabbita8internal7runtime5INode8relocate(inode$2, parent, before);
               inode = inode$2;
             }
-            _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(reversed, { _0: _k, _1: inode });
+            _M0MPC15array5Array4pushGRP419moonbit_2dcommunity7rabbita8internal7runtime5INodeE(reversed, { _0: _k, _1: inode });
             before = _M0FP419moonbit_2dcommunity7rabbita8internal7runtime8nullableGRP319moonbit_2dcommunity7rabbita3dom4NodeE(_M0MP419moonbit_2dcommunity7rabbita8internal7runtime5INode5start(inode));
             _tmp = i - 1 | 0;
             continue;
@@ -5682,7 +5662,7 @@ function _M0FP419moonbit_2dcommunity7rabbita8internal7runtime14cleanup__store(id
     }
   }
 }
-function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(_env, scheduler, model) {
+function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(_env, scheduler, model) {
   const subscriptions = _env._2;
   const emit = _env._1;
   const sub_map = _env._0;
@@ -5696,21 +5676,7 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__s
     return;
   }
 }
-function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(_env, scheduler, model) {
-  const subscriptions = _env._2;
-  const emit = _env._1;
-  const sub_map = _env._0;
-  if (subscriptions === undefined) {
-    return;
-  } else {
-    const _Some = subscriptions;
-    const _subscriptions = _Some;
-    const new_subs = _M0MP319moonbit_2dcommunity7rabbita3sub3Sub7to__map(_subscriptions(emit, model), _M0FP419moonbit_2dcommunity7rabbita8internal3key3key, false);
-    sub_map.val = _M0FP419moonbit_2dcommunity7rabbita8internal7runtime10diff__subs(sub_map.val, new_subs, scheduler);
-    return;
-  }
-}
-function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(_env, scheduler, model) {
+function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(_env, scheduler, model) {
   const subscriptions = _env._2;
   const emit = _env._1;
   const sub_map = _env._0;
@@ -5738,9 +5704,9 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__s
     return;
   }
 }
-function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(scheduler, initialize, update, subscriptions) {
+function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(scheduler, initialize, update, subscriptions) {
   const id = _M0MP419moonbit_2dcommunity7rabbita8internal7slotmap7SlotMap8allocateGRP419moonbit_2dcommunity7rabbita8internal7runtime5StoreE(_M0FP419moonbit_2dcommunity7rabbita8internal7runtime14global__stores);
-  const emit = _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(id);
+  const emit = _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(id);
   const _bind = [];
   const sub_map = new _M0TPB8MutLocalGRPB3MapGsRP319moonbit_2dcommunity7rabbita3sub10RunningSubEE(_M0MPB3Map3MapGsRP319moonbit_2dcommunity7rabbita3sub10RunningSubE(new _M0TPB9ArrayViewGUsRP319moonbit_2dcommunity7rabbita3sub10RunningSubEE(_bind, 0, 0), undefined));
   const _env = { _0: sub_map, _1: emit, _2: subscriptions };
@@ -5764,7 +5730,7 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__s
     const _bind$4 = update(emit, msg$2, _tmp);
     const _new_model = _bind$4._0;
     const _cmd = _bind$4._1;
-    _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(_env, scheduler$2, _new_model);
+    _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(_env, scheduler$2, _new_model);
     _set_model(_new_model);
     scheduler$2.method_table.method_3(scheduler$2.self, _cmd);
   };
@@ -5782,7 +5748,7 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__s
     const _p$2 = _p;
     _tmp$2 = _p$2;
   }
-  _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(_env, _tmp, _tmp$2);
+  _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(_env, _tmp, _tmp$2);
   return { _0: _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node3mapGOiiE(_model, (x) => {
     if (x === undefined) {
       return $panic();
@@ -5792,9 +5758,9 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__s
     }
   }), _1: emit };
 }
-function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(scheduler, initialize, update, subscriptions) {
+function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(scheduler, initialize, update, subscriptions) {
   const id = _M0MP419moonbit_2dcommunity7rabbita8internal7slotmap7SlotMap8allocateGRP419moonbit_2dcommunity7rabbita8internal7runtime5StoreE(_M0FP419moonbit_2dcommunity7rabbita8internal7runtime14global__stores);
-  const emit = _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(id);
+  const emit = _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(id);
   const _bind = [];
   const sub_map = new _M0TPB8MutLocalGRPB3MapGsRP319moonbit_2dcommunity7rabbita3sub10RunningSubEE(_M0MPB3Map3MapGsRP319moonbit_2dcommunity7rabbita3sub10RunningSubE(new _M0TPB9ArrayViewGUsRP319moonbit_2dcommunity7rabbita3sub10RunningSubEE(_bind, 0, 0), undefined));
   const _env = { _0: sub_map, _1: emit, _2: subscriptions };
@@ -5811,7 +5777,7 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__s
     const _bind$4 = update(emit, msg$2, old_model === -1 ? $panic() : old_model);
     const _new_model = _bind$4._0;
     const _cmd = _bind$4._1;
-    _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(_env, scheduler$2, _new_model);
+    _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(_env, scheduler$2, _new_model);
     _set_model(_new_model);
     scheduler$2.method_table.method_3(scheduler$2.self, _cmd);
   };
@@ -5822,62 +5788,8 @@ function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__s
   _M0IP016_24default__implP319moonbit_2dcommunity7rabbita3cmd9Scheduler3addGRP419moonbit_2dcommunity7rabbita8internal7runtime7SandboxE(scheduler, _init_cmd);
   const _tmp = { self: scheduler, method_table: _M0FP0118moonbit_2dcommunity_2frabbita_2finternal_2fruntime_2fSandbox_24as_24_40moonbit_2dcommunity_2frabbita_2fcmd_2eScheduler };
   const _p = _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4readGObE(_model);
-  _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(_env, _tmp, _p === -1 ? $panic() : _p);
+  _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(_env, _tmp, _p === -1 ? $panic() : _p);
   return { _0: _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node3mapGObbE(_model, (x) => x === -1 ? $panic() : x), _1: emit };
-}
-function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(scheduler, initialize, update, subscriptions) {
-  const id = _M0MP419moonbit_2dcommunity7rabbita8internal7slotmap7SlotMap8allocateGRP419moonbit_2dcommunity7rabbita8internal7runtime5StoreE(_M0FP419moonbit_2dcommunity7rabbita8internal7runtime14global__stores);
-  const emit = _M0FP319moonbit_2dcommunity7rabbita3cmd13make__emitterGRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(id);
-  const _bind = [];
-  const sub_map = new _M0TPB8MutLocalGRPB3MapGsRP319moonbit_2dcommunity7rabbita3sub10RunningSubEE(_M0MPB3Map3MapGsRP319moonbit_2dcommunity7rabbita3sub10RunningSubE(new _M0TPB9ArrayViewGUsRP319moonbit_2dcommunity7rabbita3sub10RunningSubEE(_bind, 0, 0), undefined));
-  const _env = { _0: sub_map, _1: emit, _2: subscriptions };
-  const _bind$2 = _M0FP419moonbit_2dcommunity7rabbita8internal6duplix5inputGOiE(undefined);
-  const _model = _bind$2._0;
-  const _set_model = _bind$2._1;
-  const _bind$3 = initialize(emit);
-  const _model_value = _bind$3._0;
-  const _init_cmd = _bind$3._1;
-  _set_model(_model_value);
-  const on_update = (scheduler$2, msg) => {
-    const msg$2 = msg.value;
-    const old_model = _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4readGOiE(_model);
-    let _tmp;
-    if (old_model === undefined) {
-      _tmp = $panic();
-    } else {
-      const _p = old_model;
-      _tmp = _p;
-    }
-    const _bind$4 = update(emit, msg$2, _tmp);
-    const _new_model = _bind$4._0;
-    const _cmd = _bind$4._1;
-    _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(_env, scheduler$2, _new_model);
-    _set_model(_new_model);
-    scheduler$2.method_table.method_3(scheduler$2.self, _cmd);
-  };
-  _M0MP419moonbit_2dcommunity7rabbita8internal7slotmap7SlotMap5writeGRP419moonbit_2dcommunity7rabbita8internal7runtime5StoreE(_M0FP419moonbit_2dcommunity7rabbita8internal7runtime14global__stores, id, new _M0TP419moonbit_2dcommunity7rabbita8internal7runtime5Store(id, on_update));
-  _M0FP419moonbit_2dcommunity7rabbita8internal6duplix11on__cleanup(() => {
-    _M0FP419moonbit_2dcommunity7rabbita8internal7runtime14cleanup__store(id, sub_map.val, { self: scheduler, method_table: _M0FP0118moonbit_2dcommunity_2frabbita_2finternal_2fruntime_2fSandbox_24as_24_40moonbit_2dcommunity_2frabbita_2fcmd_2eScheduler });
-  });
-  _M0IP016_24default__implP319moonbit_2dcommunity7rabbita3cmd9Scheduler3addGRP419moonbit_2dcommunity7rabbita8internal7runtime7SandboxE(scheduler, _init_cmd);
-  const _tmp = { self: scheduler, method_table: _M0FP0118moonbit_2dcommunity_2frabbita_2finternal_2fruntime_2fSandbox_24as_24_40moonbit_2dcommunity_2frabbita_2fcmd_2eScheduler };
-  const _p = _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4readGOiE(_model);
-  let _tmp$2;
-  if (_p === undefined) {
-    _tmp$2 = $panic();
-  } else {
-    const _p$2 = _p;
-    _tmp$2 = _p$2;
-  }
-  _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineN12handle__subsS129GiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(_env, _tmp, _tmp$2);
-  return { _0: _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node3mapGOiiE(_model, (x) => {
-    if (x === undefined) {
-      return $panic();
-    } else {
-      const _p$2 = x;
-      return _p$2;
-    }
-  }), _1: emit };
 }
 function _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGuuE(scheduler, initialize, update, subscriptions) {
   const id = _M0MP419moonbit_2dcommunity7rabbita8internal7slotmap7SlotMap8allocateGRP419moonbit_2dcommunity7rabbita8internal7runtime5StoreE(_M0FP419moonbit_2dcommunity7rabbita8internal7runtime14global__stores);
@@ -6317,15 +6229,25 @@ function _M0FP319moonbit_2dcommunity7rabbita4html15push__autofocus(value, attrs)
     return;
   }
 }
-function _M0FP319moonbit_2dcommunity7rabbita4html4nodeGsE(tag, attrs, children) {
-  const props = attrs;
-  const _p = _M0IPC16string6StringP319moonbit_2dcommunity7rabbita4html10IsChildren12to__children(children);
-  const _p$2 = undefined;
-  return new _M0DTP419moonbit_2dcommunity7rabbita8internal7runtime5VNode4Elem(tag, props, _p, _p$2);
+function _M0FP319moonbit_2dcommunity7rabbita4html10push__cite(value, attrs) {
+  if (value === undefined) {
+    return;
+  } else {
+    const _Some = value;
+    const _v = _Some;
+    _M0MP319moonbit_2dcommunity7rabbita4html5Attrs9attribute(attrs, "cite", _v);
+    return;
+  }
 }
 function _M0FP319moonbit_2dcommunity7rabbita4html4nodeGRPB5ArrayGRP319moonbit_2dcommunity7rabbita4html4HtmlEE(tag, attrs, children) {
   const props = attrs;
   const _p = _M0IPC15array5ArrayP319moonbit_2dcommunity7rabbita4html10IsChildren12to__children(children);
+  const _p$2 = undefined;
+  return new _M0DTP419moonbit_2dcommunity7rabbita8internal7runtime5VNode4Elem(tag, props, _p, _p$2);
+}
+function _M0FP319moonbit_2dcommunity7rabbita4html4nodeGsE(tag, attrs, children) {
+  const props = attrs;
+  const _p = _M0IPC16string6StringP319moonbit_2dcommunity7rabbita4html10IsChildren12to__children(children);
   const _p$2 = undefined;
   return new _M0DTP419moonbit_2dcommunity7rabbita8internal7runtime5VNode4Elem(tag, props, _p, _p$2);
 }
@@ -6366,7 +6288,17 @@ function _M0FP319moonbit_2dcommunity7rabbita4html14button_2einnerGsE(style, id, 
   _M0FP319moonbit_2dcommunity7rabbita4html8push__id(id, attrs$2);
   return _M0FP319moonbit_2dcommunity7rabbita4html4nodeGsE("button", attrs$2, children);
 }
-function _M0FP319moonbit_2dcommunity7rabbita4html6buttonGsE(style$46$opt, id, class_, title, hidden, type_, disabled, name, value, autofocus, on_click, attrs, children) {
+function _M0FP319moonbit_2dcommunity7rabbita4html10h1_2einnerGsE(style, id, class_, title, hidden, cite, attrs, children) {
+  const attrs$2 = _M0FP319moonbit_2dcommunity7rabbita4html14resolve__attrs(attrs);
+  _M0FP319moonbit_2dcommunity7rabbita4html11push__title(title, attrs$2);
+  _M0FP319moonbit_2dcommunity7rabbita4html12push__hidden(hidden, attrs$2);
+  _M0FP319moonbit_2dcommunity7rabbita4html10push__cite(cite, attrs$2);
+  _M0FP319moonbit_2dcommunity7rabbita4html11push__style(style, attrs$2);
+  _M0FP319moonbit_2dcommunity7rabbita4html11push__class(class_, attrs$2);
+  _M0FP319moonbit_2dcommunity7rabbita4html8push__id(id, attrs$2);
+  return _M0FP319moonbit_2dcommunity7rabbita4html4nodeGsE("h1", attrs$2, children);
+}
+function _M0FP319moonbit_2dcommunity7rabbita4html2h1GsE(style$46$opt, id, class_, title, hidden, cite, attrs, children) {
   let style;
   if (style$46$opt.$tag === 1) {
     const _Some = style$46$opt;
@@ -6374,22 +6306,7 @@ function _M0FP319moonbit_2dcommunity7rabbita4html6buttonGsE(style$46$opt, id, cl
   } else {
     style = [];
   }
-  return _M0FP319moonbit_2dcommunity7rabbita4html14button_2einnerGsE(style, id, class_, title, hidden, type_, disabled, name, value, autofocus, on_click, attrs, children);
-}
-function _M0FP319moonbit_2dcommunity7rabbita4html11div_2einnerGsE(style, id, class_, title, hidden, on_click, on_mousedown, on_mouseup, on_scroll, on_keydown, on_keyup, attrs, children) {
-  const attrs$2 = _M0FP319moonbit_2dcommunity7rabbita4html14resolve__attrs(attrs);
-  _M0FP319moonbit_2dcommunity7rabbita4html11push__title(title, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html12push__hidden(hidden, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html11push__click(on_click, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html15push__mousedown(on_mousedown, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html13push__mouseup(on_mouseup, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html12push__scroll(on_scroll, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html13push__keydown(on_keydown, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html11push__keyup(on_keyup, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html11push__style(style, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html11push__class(class_, attrs$2);
-  _M0FP319moonbit_2dcommunity7rabbita4html8push__id(id, attrs$2);
-  return _M0FP319moonbit_2dcommunity7rabbita4html4nodeGsE("div", attrs$2, children);
+  return _M0FP319moonbit_2dcommunity7rabbita4html10h1_2einnerGsE(style, id, class_, title, hidden, cite, attrs, children);
 }
 function _M0FP319moonbit_2dcommunity7rabbita4html11div_2einnerGRPB5ArrayGRP319moonbit_2dcommunity7rabbita4html4HtmlEE(style, id, class_, title, hidden, on_click, on_mousedown, on_mouseup, on_scroll, on_keydown, on_keyup, attrs, children) {
   const attrs$2 = _M0FP319moonbit_2dcommunity7rabbita4html14resolve__attrs(attrs);
@@ -6486,10 +6403,10 @@ function _M0MP219moonbit_2dcommunity7rabbita3App5mount(self, element_id) {
 function _M0MP219moonbit_2dcommunity7rabbita3Val4map2GRP319moonbit_2dcommunity7rabbita4html4HtmluRP319moonbit_2dcommunity7rabbita4html4HtmlE(a, b, f) {
   return _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4map2GRP319moonbit_2dcommunity7rabbita4html4HtmluRP319moonbit_2dcommunity7rabbita4html4HtmlE(a, b, f);
 }
-function _M0MP219moonbit_2dcommunity7rabbita3Val4map3GibiRP319moonbit_2dcommunity7rabbita4html4HtmlE(a, b, c, f) {
-  return _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4map3GibiRP319moonbit_2dcommunity7rabbita4html4HtmlE(a, b, c, f);
+function _M0MP219moonbit_2dcommunity7rabbita3Val4map2GibRP319moonbit_2dcommunity7rabbita4html4HtmlE(a, b, f) {
+  return _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node4map2GibRP319moonbit_2dcommunity7rabbita4html4HtmlE(a, b, f);
 }
-function _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(model, update) {
+function _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(model, update) {
   const _p = _M0FP219moonbit_2dcommunity7rabbita14ambient__graph.val;
   let graph;
   if (_p === undefined) {
@@ -6498,12 +6415,12 @@ function _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGiRP310tonyfett
     const _p$2 = _p;
     graph = _p$2;
   }
-  const _bind = _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(graph.sandbox, (_discard_) => ({ _0: model, _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), (_discard_, msg, model$2) => ({ _0: update(msg, model$2), _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), undefined);
+  const _bind = _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(graph.sandbox, (_discard_) => ({ _0: model, _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), (_discard_, msg, model$2) => ({ _0: update(msg, model$2), _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), undefined);
   const _node = _bind._0;
   const _emit = _bind._1;
   return { _0: _node, _1: _emit };
 }
-function _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(model, update) {
+function _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(model, update) {
   const _p = _M0FP219moonbit_2dcommunity7rabbita14ambient__graph.val;
   let graph;
   if (_p === undefined) {
@@ -6512,27 +6429,13 @@ function _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGbRP310tonyfett
     const _p$2 = _p;
     graph = _p$2;
   }
-  const _bind = _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(graph.sandbox, (_discard_) => ({ _0: model, _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), (_discard_, msg, model$2) => ({ _0: update(msg, model$2), _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), undefined);
+  const _bind = _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(graph.sandbox, (_discard_) => ({ _0: model, _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), (_discard_, msg, model$2) => ({ _0: update(msg, model$2), _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), undefined);
   const _node = _bind._0;
   const _emit = _bind._1;
   return { _0: _node, _1: _emit };
 }
-function _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(model, update) {
-  const _p = _M0FP219moonbit_2dcommunity7rabbita14ambient__graph.val;
-  let graph;
-  if (_p === undefined) {
-    graph = $panic();
-  } else {
-    const _p$2 = _p;
-    graph = _p$2;
-  }
-  const _bind = _M0MP419moonbit_2dcommunity7rabbita8internal7runtime7Sandbox22create__state__machineGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(graph.sandbox, (_discard_) => ({ _0: model, _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), (_discard_, msg, model$2) => ({ _0: update(msg, model$2), _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), undefined);
-  const _node = _bind._0;
-  const _emit = _bind._1;
-  return { _0: _node, _1: _emit };
-}
-function _M0MP219moonbit_2dcommunity7rabbita3Val10switch__byGiuE(a, f, by) {
-  return _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node10switch__byGiuE(a, (e) => f(e), by);
+function _M0MP219moonbit_2dcommunity7rabbita3Val10switch__byGbuE(a, f, by) {
+  return _M0MP419moonbit_2dcommunity7rabbita8internal6duplix4Node10switch__byGbuE(a, (e) => f(e), by);
 }
 function _M0FP219moonbit_2dcommunity7rabbita25create__state__with__initGuuE(init, update, subscriptions) {
   const _p = _M0FP219moonbit_2dcommunity7rabbita14ambient__graph.val;
@@ -6548,52 +6451,50 @@ function _M0FP219moonbit_2dcommunity7rabbita25create__state__with__initGuuE(init
   const _emit = _bind._1;
   return { _0: _node, _1: _emit };
 }
-function _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8observer(page, dialog_emit) {
-  return _M0MP219moonbit_2dcommunity7rabbita3Val10switch__byGiuE(page, (_discard_) => {
+function _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main13tab__observer(tab, counter_emit) {
+  return _M0MP219moonbit_2dcommunity7rabbita3Val10switch__byGbuE(tab, (_discard_) => {
     const _bind = _M0FP219moonbit_2dcommunity7rabbita25create__state__with__initGuuE((_discard_$2) => {
-      const _func = dialog_emit;
+      const _func = counter_emit;
       return { _0: undefined, _1: _func(1) };
     }, (_discard_$2, _discard_$3, model) => ({ _0: model, _1: _M0FP319moonbit_2dcommunity7rabbita3cmd4none }), undefined);
     return _bind._0;
-  }, (page$2) => _M0MPC13int3Int18to__string_2einner(page$2, 10));
+  }, (tab$2) => tab$2 ? "B" : "A");
 }
-function _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6render(page, dialog_open, theme, page_emit, dialog_emit, theme_emit) {
-  const _string_builder = _M0MPB13StringBuilder21StringBuilder_2einner(16);
-  _M0IPB13StringBuilderPB6Logger13write__string(_string_builder, "page: ");
-  _M0MPB13StringBuilder13write__objectGiE(_string_builder, page);
-  _M0IPB13StringBuilderPB6Logger13write__string(_string_builder, " | theme: ");
-  _M0MPB13StringBuilder13write__objectGiE(_string_builder, theme);
-  const _tmp = _M0FP319moonbit_2dcommunity7rabbita4html1pGsE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, undefined, _string_builder.val);
-  const _func = page_emit;
-  const _tmp$2 = _M0FP319moonbit_2dcommunity7rabbita4html3divGRPB5ArrayGRP319moonbit_2dcommunity7rabbita4html4HtmlEE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, undefined, undefined, undefined, undefined, undefined, undefined, undefined, [_M0FP319moonbit_2dcommunity7rabbita4html6buttonGsE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS65, -1, undefined, undefined, -1, _func(0), undefined, "1. navigate (creates a switch_by branch)")]);
-  const _func$2 = dialog_emit;
-  const _tmp$3 = _M0FP319moonbit_2dcommunity7rabbita4html3divGRPB5ArrayGRP319moonbit_2dcommunity7rabbita4html4HtmlEE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, undefined, undefined, undefined, undefined, undefined, undefined, undefined, [_M0FP319moonbit_2dcommunity7rabbita4html6buttonGsE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS66, -1, undefined, undefined, -1, _func$2(0), undefined, "2. open dialog (same store the branch init emits into)")]);
-  const _func$3 = theme_emit;
-  const children = [_tmp, _tmp$2, _tmp$3, _M0FP319moonbit_2dcommunity7rabbita4html3divGRPB5ArrayGRP319moonbit_2dcommunity7rabbita4html4HtmlEE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, undefined, undefined, undefined, undefined, undefined, undefined, undefined, [_M0FP319moonbit_2dcommunity7rabbita4html6buttonGsE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS67, -1, undefined, undefined, -1, _func$3(0), undefined, "3. cycle theme (different store)")])];
-  if (dialog_open) {
-    _M0MPC15array5Array4pushGRP319moonbit_2dcommunity7rabbita4html4HtmlE(children, _M0FP319moonbit_2dcommunity7rabbita4html11div_2einnerGsE(["margin-top: 16px", "padding: 24px", "background: #c8f7c5", "border: 2px solid #2e7d32", "font-weight: bold"], undefined, undefined, undefined, -1, undefined, undefined, undefined, undefined, undefined, undefined, undefined, "DIALOG IS OPEN"));
-  }
-  return _M0FP319moonbit_2dcommunity7rabbita4html11div_2einnerGRPB5ArrayGRP319moonbit_2dcommunity7rabbita4html4HtmlEE(["font-family: monospace", "padding: 16px"], undefined, undefined, undefined, -1, undefined, undefined, undefined, undefined, undefined, undefined, undefined, children);
+function _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6render(count, tab, counter_emit, tab_emit) {
+  const button_style = ["font-size: 18px", "padding: 8px 20px", "margin-right: 12px"];
+  const _tmp = ["font-family: monospace", "padding: 16px"];
+  const _string_builder = _M0MPB13StringBuilder21StringBuilder_2einner(7);
+  _M0IPB13StringBuilderPB6Logger13write__string(_string_builder, "count: ");
+  _M0MPB13StringBuilder13write__objectGiE(_string_builder, count);
+  const _tmp$2 = _M0FP319moonbit_2dcommunity7rabbita4html2h1GsE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, undefined, undefined, _string_builder.val);
+  const _string_builder$2 = _M0MPB13StringBuilder21StringBuilder_2einner(13);
+  _M0IPB13StringBuilderPB6Logger13write__string(_string_builder$2, "current tab: ");
+  _M0MPB13StringBuilder13write__objectGsE(_string_builder$2, tab ? "B" : "A");
+  const _tmp$3 = _M0FP319moonbit_2dcommunity7rabbita4html1pGsE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, undefined, _string_builder$2.val);
+  const _func = counter_emit;
+  const _tmp$4 = _M0FP319moonbit_2dcommunity7rabbita4html14button_2einnerGsE(button_style, undefined, undefined, undefined, -1, _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS53, -1, undefined, undefined, -1, _func(0), undefined, "+1");
+  const _func$2 = tab_emit;
+  return _M0FP319moonbit_2dcommunity7rabbita4html11div_2einnerGRPB5ArrayGRP319moonbit_2dcommunity7rabbita4html4HtmlEE(_tmp, undefined, undefined, undefined, -1, undefined, undefined, undefined, undefined, undefined, undefined, undefined, [_tmp$2, _tmp$3, _M0FP319moonbit_2dcommunity7rabbita4html3divGRPB5ArrayGRP319moonbit_2dcommunity7rabbita4html4HtmlEE(_M0DTPC16option6OptionGRPB5ArrayGsEE4None__, undefined, undefined, undefined, -1, undefined, undefined, undefined, undefined, undefined, undefined, undefined, [_tmp$4, _M0FP319moonbit_2dcommunity7rabbita4html14button_2einnerGsE(button_style, undefined, undefined, undefined, -1, _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6renderN6constrS54, -1, undefined, undefined, -1, _func$2(0), undefined, "switch tab")])]);
 }
 function _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main3app() {
-  const _bind = _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main7PageMsgE(0, (msg, model) => model + 1 | 0);
-  const _page = _bind._0;
-  const _page_emit = _bind._1;
-  const _bind$2 = _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main9DialogMsgE(false, (msg, model) => {
+  const _bind = _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main10CounterMsgE(0, (msg, model) => {
     if (msg === 0) {
-      _M0FPB7printlnGsE("dialog store accepted OpenDialog: model is now true");
-      return true;
+      const _string_builder = _M0MPB13StringBuilder21StringBuilder_2einner(28);
+      _M0IPB13StringBuilderPB6Logger13write__string(_string_builder, "counter store: model is now ");
+      _M0MPB13StringBuilder13write__objectGiE(_string_builder, model + 1 | 0);
+      _M0FPB7printlnGsE(_string_builder.val);
+      return model + 1 | 0;
     } else {
       return model;
     }
   });
-  const _dialog = _bind$2._0;
-  const _dialog_emit = _bind$2._1;
-  const _bind$3 = _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGiRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8ThemeMsgE(0, (msg, model) => model + 1 | 0);
-  const _theme = _bind$3._0;
-  const _theme_emit = _bind$3._1;
-  const route_observer = _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main8observer(_page, _dialog_emit);
-  return _M0MP219moonbit_2dcommunity7rabbita3Val4map2GRP319moonbit_2dcommunity7rabbita4html4HtmluRP319moonbit_2dcommunity7rabbita4html4HtmlE(_M0MP219moonbit_2dcommunity7rabbita3Val4map3GibiRP319moonbit_2dcommunity7rabbita4html4HtmlE(_page, _dialog, _theme, (page, dialog_open, theme) => _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6render(page, dialog_open, theme, _page_emit, _dialog_emit, _theme_emit)), route_observer, (html, _discard_) => html);
+  const _count = _bind._0;
+  const _counter_emit = _bind._1;
+  const _bind$2 = _M0FP219moonbit_2dcommunity7rabbita19create__pure__stateGbRP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6TabMsgE(false, (msg, model) => !model);
+  const _tab = _bind$2._0;
+  const _tab_emit = _bind$2._1;
+  const observer = _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main13tab__observer(_tab, _counter_emit);
+  return _M0MP219moonbit_2dcommunity7rabbita3Val4map2GRP319moonbit_2dcommunity7rabbita4html4HtmluRP319moonbit_2dcommunity7rabbita4html4HtmlE(_M0MP219moonbit_2dcommunity7rabbita3Val4map2GibRP319moonbit_2dcommunity7rabbita4html4HtmlE(_count, _tab, (count, tab) => _M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main6render(count, tab, _counter_emit, _tab_emit)), observer, (html, _discard_) => html);
 }
 (() => {
   _M0MP219moonbit_2dcommunity7rabbita3App5mount(_M0FP219moonbit_2dcommunity7rabbita3new(_M0FP310tonyfettes31rabbita_2dmidpull_2ddrain_2dmre4main3app), "app");

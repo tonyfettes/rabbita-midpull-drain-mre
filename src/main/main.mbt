@@ -1,32 +1,28 @@
 ///|
-enum PageMsg {
-  NextPage
+enum CounterMsg {
+  Increment
+  TabMounted
 }
 
 ///|
-enum DialogMsg {
-  OpenDialog
-  BranchCreated
+enum TabMsg {
+  SwitchTab
 }
 
 ///|
-enum ThemeMsg {
-  CycleTheme
-}
-
-///|
-/// Mirrors the "route observer" pattern: every new `switch_by` branch emits a
-/// message into another store from its `create_state_with_init` init command.
-/// That emit runs synchronously while the render pull is recomputing the
-/// incremental graph, which is what corrupts the dialog store's dirty-flag
-/// edges.
-fn observer(
-  page : @rabbita.Val[Int],
-  dialog_emit : @rabbita.Emit[DialogMsg],
+/// Each tab is its own `switch_by` branch. On mount the branch notifies the
+/// counter store — a common observer pattern (route observers, analytics,
+/// "component became active" pings). The notification is a no-op for the
+/// counter model, but it runs synchronously while the render pull is
+/// recomputing the incremental graph, and that corrupts the counter store's
+/// dirty-flag edges.
+fn tab_observer(
+  tab : @rabbita.Val[Bool],
+  counter_emit : @rabbita.Emit[CounterMsg],
 ) -> @rabbita.Val[Unit] {
-  page.switch_by(by=page => page.to_string(), fn(_) {
+  tab.switch_by(by=tab => if tab { "B" } else { "A" }, fn(_) {
     let (state, _) = @rabbita.create_state_with_init(
-      init=fn(_ : @rabbita.Emit[Unit]) { ((), dialog_emit(BranchCreated)) },
+      init=fn(_ : @rabbita.Emit[Unit]) { ((), counter_emit(TabMounted)) },
       update=fn(_, _ : Unit, model) { (model, @rabbita.none) },
     )
     state
@@ -35,84 +31,60 @@ fn observer(
 
 ///|
 fn render(
-  page : Int,
-  dialog_open : Bool,
-  theme : Int,
-  page_emit : @rabbita.Emit[PageMsg],
-  dialog_emit : @rabbita.Emit[DialogMsg],
-  theme_emit : @rabbita.Emit[ThemeMsg],
+  count : Int,
+  tab : Bool,
+  counter_emit : @rabbita.Emit[CounterMsg],
+  tab_emit : @rabbita.Emit[TabMsg],
 ) -> @rabbita.Html {
-  let children : Array[@rabbita.Html] = [
-    @html.p("page: \{page} | theme: \{theme}"),
-    @html.div([
-      @html.button(
-        type_="button",
-        on_click=page_emit(NextPage),
-        "1. navigate (creates a switch_by branch)",
-      ),
-    ]),
-    @html.div([
-      @html.button(
-        type_="button",
-        on_click=dialog_emit(OpenDialog),
-        "2. open dialog (same store the branch init emits into)",
-      ),
-    ]),
-    @html.div([
-      @html.button(
-        type_="button",
-        on_click=theme_emit(CycleTheme),
-        "3. cycle theme (different store)",
-      ),
-    ]),
+  let button_style = [
+    "font-size: 18px", "padding: 8px 20px", "margin-right: 12px",
   ]
-  if dialog_open {
-    children.push(
-      @html.div(
-        style=[
-          "margin-top: 16px", "padding: 24px", "background: #c8f7c5", "border: 2px solid #2e7d32",
-          "font-weight: bold",
-        ],
-        "DIALOG IS OPEN",
+  @html.div(style=["font-family: monospace", "padding: 16px"], [
+    @html.h1("count: \{count}"),
+    @html.p("current tab: \{if tab { "B" } else { "A" }}"),
+    @html.div([
+      @html.button(
+        type_="button",
+        on_click=counter_emit(Increment),
+        style=button_style,
+        "+1",
       ),
-    )
-  }
-  @html.div(style=["font-family: monospace", "padding: 16px"], children)
+      @html.button(
+        type_="button",
+        on_click=tab_emit(SwitchTab),
+        style=button_style,
+        "switch tab",
+      ),
+    ]),
+  ])
 }
 
 ///|
 fn app() -> @rabbita.Val[@rabbita.Html] {
-  let (page, page_emit) = @rabbita.create_pure_state(0, update=fn(msg, model) {
-    match msg {
-      NextPage => model + 1
-    }
-  })
-  let (dialog, dialog_emit) = @rabbita.create_pure_state(false, update=fn(
+  let (count, counter_emit) = @rabbita.create_pure_state(0, update=fn(
     msg,
     model,
   ) {
     match msg {
-      OpenDialog => {
-        println("dialog store accepted OpenDialog: model is now true")
-        true
+      Increment => {
+        println("counter store: model is now \{model + 1}")
+        model + 1
       }
-      BranchCreated => model
+      TabMounted => model
     }
   })
-  let (theme, theme_emit) = @rabbita.create_pure_state(0, update=fn(
+  let (tab, tab_emit) = @rabbita.create_pure_state(false, update=fn(
     msg,
     model,
   ) {
     match msg {
-      CycleTheme => model + 1
+      SwitchTab => !model
     }
   })
-  let route_observer = observer(page, dialog_emit)
-  page
-  .map3(dialog, theme, fn(page, dialog_open, theme) {
-    render(page, dialog_open, theme, page_emit, dialog_emit, theme_emit)
-  })
-  .map2(route_observer, fn(html, _) { html })
+  let observer = tab_observer(tab, counter_emit)
+  count
+  .map2(tab, fn(count, tab) { render(count, tab, counter_emit, tab_emit) })
+  .map2(observer, fn(html, _) { html })
 }
 
 ///|

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>rabbita mid-pull drain MRE</title>
+    <title>rabbita frozen-counter MRE</title>
     <style>
       body {
         font-family: monospace;
@@ -28,13 +28,16 @@
     </style>
   </head>
   <body>
-    <h1>rabbita: missed re-render after a switch_by branch init emit</h1>
+    <h1>rabbita: the counter that freezes after a tab switch</h1>
     <div class="steps">
-      Click the buttons in order <b>1 → 2 → 3</b>.<br />
-      After <b>2</b> the store log below proves the model changed, but no
-      dialog appears (the bug). After <b>3</b> — an unrelated store write —
-      the dialog suddenly shows up.<br />
-      Reload and click <b>2</b> directly: it works fine without step 1.
+      A counter with two tabs. Each tab component pings the counter store once
+      when it mounts (a no-op observer message).
+      <ol>
+        <li>Click <b>+1</b> a few times — works normally.</li>
+        <li>Click <b>switch tab</b>, then <b>+1</b> again — the counter is
+          frozen. The store log below shows the model still counting.</li>
+        <li>Click <b>switch tab</b> again — the counter suddenly catches up.</li>
+      </ol>
     </div>
     <div id="app"></div>
     <div id="log">store log:
