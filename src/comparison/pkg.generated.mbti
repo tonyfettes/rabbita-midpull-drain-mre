@@ -1,0 +1,65 @@
+// Generated using `moon info`, DON'T EDIT IT
+package "tonyfettes/rabbita-midpull-drain-mre/comparison"
+
+import {
+  "moonbit-community/rabbita",
+  "moonbit-community/rabbita/cmd",
+}
+
+// Values
+pub fn audit_observer(@rabbita.Val[Int], @cmd.Emit[AuditMsg]) -> @rabbita.Val[Unit]
+
+pub fn clicks_elm(@cmd.Emit[AuditMsg]) -> (@rabbita.Val[Int], @cmd.Emit[ClickMsg])
+
+pub fn clicks_observer() -> (@rabbita.Val[Int], @cmd.Emit[ClickMsg])
+
+pub fn layout_store_elm(@cmd.Emit[SyncMsg]) -> @cmd.Emit[LayoutMsg]
+
+pub fn pair_observer(@rabbita.Val[String], @rabbita.Val[Bool], @cmd.Emit[String]) -> @rabbita.Val[Unit]
+
+pub fn session_elm(@cmd.Emit[String]) -> (@rabbita.Val[Session], @cmd.Emit[SessionMsg])
+
+pub fn sync_coordinator_elm(@cmd.Emit[String]) -> @cmd.Emit[SyncMsg]
+
+pub fn user_observer(@rabbita.Val[Session], @cmd.Emit[String]) -> @rabbita.Val[Unit]
+
+pub fn user_store_elm(@cmd.Emit[SyncMsg]) -> @cmd.Emit[UserMsg]
+
+// Errors
+
+// Types and methods
+pub(all) enum AuditMsg {
+  CountChanged(Int)
+}
+
+pub(all) enum ClickMsg {
+  Click
+}
+
+pub(all) enum LayoutMsg {
+  SetWide(Bool)
+}
+
+pub(all) struct Session {
+  user : String
+  heartbeat : Int
+} derive(Eq)
+
+pub(all) enum SessionMsg {
+  Heartbeat
+  Login(String)
+}
+
+pub(all) enum SyncMsg {
+  UserIs(String)
+  LayoutIs(Bool)
+}
+
+pub(all) enum UserMsg {
+  SetUser(String)
+}
+
+// Type aliases
+
+// Traits
+

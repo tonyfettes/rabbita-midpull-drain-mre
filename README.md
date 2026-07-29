@@ -107,3 +107,11 @@ init=fn(_ : @rabbita.Emit[Unit]) {
 ```
 
 With that change `npm run verify` passes.
+
+## Why people write this pattern at all
+
+See [COMPARISON.md](COMPARISON.md) and `src/comparison/` for three
+type-checked pairs contrasting the orthodox Elm shape (update returns the
+notification Cmd) with the `Val[Unit]` observer shape — decoupling, free
+change detection on projections, and multi-store joins — and what each
+costs.
