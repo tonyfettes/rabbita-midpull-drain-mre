@@ -1,8 +1,6 @@
 ///| Point 2 — change detection on a projection: the session model updates
-
-///| constantly (heartbeat), but only a change of `user` should notify
-
-///| anyone.
+/// constantly (heartbeat), but only a change of `user` should notify
+/// anyone.
 
 ///|
 pub(all) struct Session {

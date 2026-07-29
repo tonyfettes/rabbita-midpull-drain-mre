@@ -1,6 +1,5 @@
 ///| Point 3 — multi-store join: notify when the (user, wide-layout) pair
-
-///| changes, where the two halves live in two different stores.
+/// changes, where the two halves live in two different stores.
 
 ///|
 pub(all) enum UserMsg {

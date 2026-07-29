@@ -1,6 +1,5 @@
 ///| Point 1 — decoupling: how does the audit store learn that the click
-
-///| counter changed?
+/// counter changed?
 
 ///|
 pub(all) enum ClickMsg {
